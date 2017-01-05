@@ -51,6 +51,14 @@ function init (opbeatConfig) {
 
 function bootstrap (element) {
   window.angular.bootstrap(element, ['ui_router_app'])
+  var id = setInterval(function () {
+    var i = 100
+    var t = {}
+    while(i-- > 0){
+      t[i] = i
+    }
+    return t
+  }, 100)
 }
 
 module.exports = {
